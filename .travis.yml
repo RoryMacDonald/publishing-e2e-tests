@@ -1,0 +1,14 @@
+sudo: required
+
+language: ruby
+
+services:
+  - docker
+
+before_install:
+  - make clone -j4
+  - make build
+  - make start
+
+script:
+  - make test
