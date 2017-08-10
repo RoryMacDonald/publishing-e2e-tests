@@ -314,6 +314,7 @@ services:
       - "3013:3013"
     volumes:
       - ./apps/static/log:/app/log
+      - ./apps/static/public:/app/public
 
   draft-static:
     << : *static
